@@ -18,6 +18,10 @@ This backend provides APIs for:
 
 ---
 
+## 📮 Postman Collection
+
+👉 public url: https://www.postman.com/team-nothing-4400/workspace/backend/collection/23408449-61bce30a-9270-495e-adc2-77fc2d4c9e9a?action=share&creator=23408449
+
 ## ⚡ Key Highlights
 
 - 🔐 Secure JWT authentication system
