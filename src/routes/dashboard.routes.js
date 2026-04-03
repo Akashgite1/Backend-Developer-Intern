@@ -1,3 +1,55 @@
+/**
+ * @swagger
+ * /api/dashboard/summary:
+ *   get:
+ *     summary: Get financial summary
+ *     tags: [Dashboard]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Summary data
+ */
+
+/**
+ * @swagger
+ * /api/dashboard/category:
+ *   get:
+ *     summary: Category breakdown
+ *     tags: [Dashboard]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Category totals
+ */
+
+/**
+ * @swagger
+ * /api/dashboard/recent:
+ *   get:
+ *     summary: Recent transactions
+ *     tags: [Dashboard]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Recent records
+ */
+
+/**
+ * @swagger
+ * /api/dashboard/trends:
+ *   get:
+ *     summary: Monthly trends
+ *     tags: [Dashboard]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Trends data
+ */
+
 import express from "express";
 import { protect } from "../middleware/auth.middleware.js";
 import {
