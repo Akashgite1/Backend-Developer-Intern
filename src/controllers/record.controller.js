@@ -21,15 +21,6 @@ export const getAll = async (req, res, next) => {
     try {
         const records = await getRecords(req.query, req.user);
 
-        const page = parseInt(query.page) || 1;
-        const limit = parseInt(query.limit) || 10;
-        const skip = (page - 1) * limit;
-
-        return await Record.find(filter)
-            .sort({ date: -1 })
-            .skip(skip)
-            .limit(limit);
-
         res.json(records);
     } catch (err) {
         next(err);
