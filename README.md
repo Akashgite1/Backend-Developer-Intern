@@ -7,6 +7,9 @@ This API handles secure authentication, financial record management, and real-ti
 ---
 
 ## 📌 Overview
+![alt text](<Screenshot 2026-04-04 at 02-49-53 Swagger UI.png>)
+
+![alt text](<Screenshot 2026-04-04 at 02-50-09 Swagger UI.png>)
 
 This backend provides APIs for:
 
