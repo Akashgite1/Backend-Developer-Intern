@@ -4,7 +4,7 @@ const options = {
     definition: {
         openapi: "3.0.0",
         info: {
-            title: "Finance Dashboard API",
+            title: "Finance Data Processing and Access Control Backend Api",
             version: "1.0.0",
             description: "API documentation for Finance Dashboard System"
         },
