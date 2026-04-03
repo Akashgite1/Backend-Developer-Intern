@@ -31,13 +31,21 @@ const userSchema = new mongoose.Schema(
             type: String,
             enum: ["ACTIVE", "INACTIVE"],
             default: "ACTIVE"
+        },
+
+        // NEW FIELDS (for password reset)
+        resetPasswordToken: {
+            type: String
+        },
+        resetPasswordExpire: {
+            type: Date
         }
     },
     { timestamps: true }
 );
 
 
-// Hash password before saving (FIXED)
+// Hash password before saving
 userSchema.pre("save", async function () {
     if (!this.isModified("password")) return;
 
