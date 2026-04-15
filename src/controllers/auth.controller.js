@@ -11,6 +11,7 @@ export const register = async (req, res, next) => {
             message: "User registered successfully",
             token
         });
+        
     } catch (error) {
         next(error);
     }
